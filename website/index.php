@@ -22,7 +22,7 @@
 </head>
 <body>
 	<div id="app" class="container-xxl mt-5 mb-5">
-		<h1 class="fs-2"><a style="color: black;" href="./">Boilerplate-Tool</a></h1>
+		<h1 class="fs-2"><a style="color: black;" href="./">Boilerplate-Tool Test</a></h1>
 		<div class="row">
 			<div class="col-xl-4" id="configure">
 				<div class="mt-4" style="padding-top: 5px;">
