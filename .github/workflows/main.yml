@@ -39,6 +39,4 @@ jobs:
           # protocol to deploy with - ftp, ftps, or ftps-legacy
           protocol: ftps # optional
           # Folder to upload from, must end with trailing slash /
-          local-dir: website/ # optional
-          # Path to upload to on the server. Must end with trailing slash /
-          server-dir: / # optional
+          local-dir: ./website/ # optional
