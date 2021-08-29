@@ -1,0 +1,16 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="de"{{ this.ogHtmlTagToString() }}&gt;
+&lt;head&gt;
+    &lt;title&gt;{{ this.configTitle }}&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content="{{ this.configDescription }}"&gt;
+    &lt;meta name="keywords" content="{{ this.configKeywords }}"&gt;
+    &lt;meta name="author" content="{{ this.configAuthor }}"&gt;
+{{ this.socialMediaMetadataToString() }}    &lt;link rel="shortcut icon" href="favicon.ico"&gt;
+{{ this.cssDataToString() }}    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+{{ this.htmlDataToString() }}{{ this.jsDataToString() }}    &lt;script src="main.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;

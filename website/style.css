@@ -1,0 +1,135 @@
+a {
+    text-decoration: none;
+}
+#app {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+#app h1 {
+    margin-bottom: 0.5rem;
+}
+#configure {
+    padding-right: 5rem;
+}
+.form-check {
+    padding-top: 0.2rem;
+}
+.form-text {
+    margin-top: -10px;
+    margin-bottom: 1rem;
+}
+pre code.hljs {
+    background: var(--bs-gray-200);
+    padding: 0;
+}
+#code {
+    background: var(--bs-gray-200);
+    padding: 30px 30px 10px 30px;
+    border: 1px solid #ced4da;
+}
+#codeContainer {
+    white-space: pre;
+}
+#codeToCopy {
+    word-wrap: normal;
+}
+#copyCodeCheckmark {
+    display: none;
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+.darkmode--activated {
+    background-color: black;
+}
+.darkmode--activated #code {
+    border: 1px solid black;
+}
+.darkmode--activated h1,
+.darkmode--activated h2,
+.darkmode--activated h3,
+.darkmode--activated label  {
+    color: black;
+}
+.darkmode--activated .input-group-text {
+    background-color: #2b2b2b;
+    color: white;
+}
+.darkmode--activated .form-control {
+    background-color: black;
+    color: white;
+}
+@media only screen and (max-width: 575px) {
+    .darkmode--activated #code {
+        border-top: 1px solid black;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+    }
+    .container-xxl {
+        margin-bottom: 0 !important;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #code {
+        padding-top: calc(30px + 1rem);
+        padding-bottom: calc(30px + 1rem);
+    }
+    #code,
+    #configure {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #app {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #app h1 {
+        font-size: 2rem !important;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+.checkmark {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    /* margin: 10% auto; */
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142;
+    }
+}
