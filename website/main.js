@@ -68,6 +68,12 @@ var app = new Vue({
                             return "https://static.hrstmnn.de/node_modules/bootstrap/dist/js/bootstrap.min.js";
                         }
                     }
+                case "tailwindMinCss":
+                    if (useCDN) {
+                        return 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.9/dist/tailwind.min.css" integrity="sha256-T4RAzSitmBwfCrqn23ZrSSsQZKc7FyE0sKjIllzjVSQ=" crossorigin="anonymous';
+                    } else {
+                        return "https://static.hrstmnn.de/tailwind.min.css";
+                    }
                 case "animateMinCss":
                     if (useCDN) {
                         return 'https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" crossorigin="anonymous';
@@ -219,6 +225,7 @@ var app = new Vue({
             var cssString = "";
             const allCssData = this.cssData.concat(this.cssAndJsData);
             cssString += this.getSubString("bootstrapMin", "css", allCssData);
+            cssString += this.getSubString("tailwindMinCss", "css", allCssData);
             cssString += this.getSubString("animateMinCss", "css", allCssData);
             cssString += this.getSubString("highlightMin", "css", allCssData);
             cssString += this.getSubString("prism", "css", allCssData);
