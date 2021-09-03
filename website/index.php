@@ -80,6 +80,10 @@
 						<label class="form-check-label" for="bootstrapMinCss">bootstrap.min.css</label>
 					</div>
 					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="bulmaMinCss" value="bulmaMinCss" v-model="cssData" v-on:click="app.refresh()">
+						<label class="form-check-label" for="bulmaMinCss">bulma.min.css</label>
+					</div>
+					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="tailwindMinCss" value="tailwindMinCss" v-model="cssData" v-on:click="app.refresh()">
 						<label class="form-check-label" for="tailwindMinCss">tailwind.min.css</label>
 					</div>
