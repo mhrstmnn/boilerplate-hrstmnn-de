@@ -80,6 +80,12 @@ var app = new Vue({
                     } else {
                         return "https://static.hrstmnn.de/tailwind.min.css";
                     }
+                case "tablerMinCss":
+                    if (useCDN) {
+                        return 'https://cdn.jsdelivr.net/npm/@tabler/icons@1.41.2/iconfont/tabler-icons.min.css" integrity="sha256-Dzg55/6gybXdVkzS1V9qsVNebG31siyzGY2Yjdc9hfQ=" crossorigin="anonymous';
+                    } else {
+                        return "https://static.hrstmnn.de/node_modules/@tabler/icons/iconfont/tabler-icons.min.css";
+                    }
                 case "animateMinCss":
                     if (useCDN) {
                         return 'https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" crossorigin="anonymous';
@@ -239,6 +245,7 @@ var app = new Vue({
             cssString += this.getSubString("bootstrapMin", "css", allCssData);
             cssString += this.getSubString("bulmaMinCss", "css", allCssData);
             cssString += this.getSubString("tailwindMinCss", "css", allCssData);
+            cssString += this.getSubString("tablerMinCss", "css", allCssData);
             cssString += this.getSubString("animateMinCss", "css", allCssData);
             cssString += this.getSubString("highlightMin", "css", allCssData);
             cssString += this.getSubString("prism", "css", allCssData);
