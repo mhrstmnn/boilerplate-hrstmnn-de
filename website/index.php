@@ -133,6 +133,10 @@
 						<label class="form-check-label" for="bootstrapMinJs">bootstrap.min.js</label>
 					</div>
 					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="featherMinJs" value="featherMinJs" v-model="jsData" v-on:click="app.refresh()">
+						<label class="form-check-label" for="featherMinJs">feather.min.js</label>
+					</div>
+					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="isMobileMinJs" value="isMobileMinJs" v-model="jsData" v-on:click="app.refresh()">
 						<label class="form-check-label" for="isMobileMinJs">isMobile.min.js</label>
 					</div>
