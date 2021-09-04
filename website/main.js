@@ -159,6 +159,12 @@ var app = new Vue({
                     } else {
                         return "https://static.hrstmnn.de/node_modules/@popperjs/core/dist/umd/popper.min.js";
                     }
+                case "featherMinJs":
+                    if (useCDN) {
+                        return 'https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha256-XfzdiC+S1keia+s9l07y7ye5a874sBq67zK4u7LTjvk=" crossorigin="anonymous';
+                    } else {
+                        return "https://static.hrstmnn.de/node_modules/feather-icons/dist/feather.min.js";
+                    }
                 case "isMobileMinJs":
                     if (useCDN) {
                         return 'https://cdn.jsdelivr.net/npm/ismobilejs@1.1.1/dist/isMobile.min.js" integrity="sha256-M9uZsv3qfi72WQfG+zH1TBvHgZZon/yNrCZjcJCo644=" crossorigin="anonymous';
@@ -254,6 +260,7 @@ var app = new Vue({
             jsString += this.getSubString("jqueryMinJs", "js", allJsData);
             jsString += this.getSubString("popperMinJs", "js", allJsData);
             jsString += this.getSubString("bootstrapMin", "js", allJsData);
+            jsString += this.getSubString("featherMinJs", "js", allJsData);
             jsString += this.getSubString("isMobileMinJs", "js", allJsData);
             jsString += this.getSubString("validatorMinJs", "js", allJsData);
             jsString += this.getSubString("darkmodeJsMinJs", "js", allJsData);
@@ -261,9 +268,12 @@ var app = new Vue({
             jsString += this.getSubString("prism", "js", allJsData);
             jsString += this.getSubString("slick", "js", allJsData);
 
-            const addScriptTag = allJsData.includes("darkmodeJsMinJs") || allJsData.includes("highlightMin");
+            const addScriptTag = allJsData.includes("featherMinJs") || allJsData.includes("darkmodeJsMinJs") || allJsData.includes("highlightMin");
             if (addScriptTag) {
                 jsString += '    <script>\n';
+            }
+            if (allJsData.includes("featherMinJs")) {
+                jsString += '        feather.replace();\n';
             }
             if (allJsData.includes("darkmodeJsMinJs")) {
                 jsString += '        var darkmodeOptions = {}\n        if (isMobile.phone) {\n';
