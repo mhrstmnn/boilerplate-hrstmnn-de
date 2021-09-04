@@ -88,6 +88,10 @@
 						<label class="form-check-label" for="tailwindMinCss">tailwind.min.css</label>
 					</div>
 					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="tablerMinCss" value="tablerMinCss" v-model="cssData" v-on:click="app.refresh()">
+						<label class="form-check-label" for="tablerMinCss">tabler.min.css</label>
+					</div>
+					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="animateMinCss" value="animateMinCss" v-model="cssData" v-on:click="app.refresh()">
 						<label class="form-check-label" for="animateMinCss">animate.min.css</label>
 					</div>
