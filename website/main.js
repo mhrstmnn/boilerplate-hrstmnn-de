@@ -68,6 +68,12 @@ var app = new Vue({
                             return "https://static.hrstmnn.de/node_modules/bootstrap/dist/js/bootstrap.min.js";
                         }
                     }
+                case "bootstrapIconsCss":
+                    if (useCDN) {
+                        return 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha256-PDJQdTN7dolQWDASIoBVrjkuOEaI137FI15sqI3Oxu8=" crossorigin="anonymous';
+                    } else {
+                        return "https://static.hrstmnn.de/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+                    }
                 case "bulmaMinCss":
                     if (useCDN) {
                         return 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" integrity="sha256-UDtbUHqpVVfXmdJcQVU/bfDEr9xldf3Dbd0ShD0Uf/Y=" crossorigin="anonymous';
@@ -243,6 +249,7 @@ var app = new Vue({
             var cssString = "";
             const allCssData = this.cssData.concat(this.cssAndJsData);
             cssString += this.getSubString("bootstrapMin", "css", allCssData);
+            cssString += this.getSubString("bootstrapIconsCss", "css", allCssData);
             cssString += this.getSubString("bulmaMinCss", "css", allCssData);
             cssString += this.getSubString("tailwindMinCss", "css", allCssData);
             cssString += this.getSubString("tablerMinCss", "css", allCssData);
