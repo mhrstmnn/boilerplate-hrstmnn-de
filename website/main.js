@@ -215,11 +215,9 @@ var app = new Vue({
                 const url = this.getUrl(name, language, this.useContentDeliveryNetwork);
                 if (Array.isArray(url)) {
                     for (let index = 0; index < url.length; index++) {
-                        console.log(subStringStart + url[index] + subStringEnd);
                         subString += subStringStart + url[index] + subStringEnd;
                     }
                 } else {
-                    console.log(subStringStart + url + subStringEnd);
                     subString += subStringStart + url + subStringEnd;
                 }              
             }
