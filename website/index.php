@@ -185,12 +185,12 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://static.hrstmnn.de/node_modules/vue/dist/vue.min.js" type="text/javascript"></script>
-	<script src="https://static.hrstmnn.de/node_modules/@popperjs/core/dist/umd/popper.min.js" type="text/javascript"></script>
-	<script src="https://static.hrstmnn.de/node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="https://static.hrstmnn.de/node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
-	<script src="https://static.hrstmnn.de/node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
-	<script src="https://static.hrstmnn.de/node_modules/@highlightjs/cdn-assets/highlight.min.js" type="text/javascript"></script>
-	<script src="main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/vue/dist/vue.min.js"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/ismobilejs/dist/isMobile.min.js"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/darkmode-js/lib/darkmode-js.min.js"></script>
+	<script type="text/javascript" src="https://static.hrstmnn.de/node_modules/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
