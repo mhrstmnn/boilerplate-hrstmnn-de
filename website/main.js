@@ -25,8 +25,8 @@ var app = new Vue({
         jsData: [],
         cssAndJsData: [],
         configTitle: "",
-        configDescription: "",
-        configKeywords: "",
+        configDescription: "Website von Michael Horstmann",
+        configKeywords: "Michael, Horstmann, Website",
         configAuthor: "Michael Horstmann",
         socialMediaMetadata: {
             display: false,
