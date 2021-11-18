@@ -208,8 +208,8 @@ var app = new Vue({
                 subStringStart = '    <link rel="stylesheet" type="text/css" href="';
                 subStringEnd = '">\n';
             } else if (language == "js") {
-                subStringStart = '    <script src="';
-                subStringEnd = '" type="text/javascript"></script>\n';
+                subStringStart = '    <script type="text/javascript" src="';
+                subStringEnd = '"></script>\n';
             }
             if (data.includes(name)) {
                 const url = this.getUrl(name, language, this.useContentDeliveryNetwork);
