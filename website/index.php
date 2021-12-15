@@ -29,19 +29,19 @@
 					<h2 class="fs-3">Konfiguration</h2>
 					<div class="input-group input-group-sm mb-3  mt-3">
 						<span class="input-group-text" id="configTitle">title</span>
-						<input type="text" class="form-control" aria-label="title" aria-describedby="configTitle" v-model="configTitle" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="title" aria-describedby="configTitle" v-model="configTitle" v-on:keyup="app.refresh()">
 					</div>
 					<div class="input-group input-group-sm mb-3">
 						<span class="input-group-text" id="configDescription">description</span>
-						<input type="text" class="form-control" aria-label="description" aria-describedby="configDescription" v-model="configDescription" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="description" aria-describedby="configDescription" v-model="configDescription" v-on:keyup="app.refresh()">
 					</div>
 					<div class="input-group input-group-sm mb-3">
 						<span class="input-group-text" id="configKeywords">keywords</span>
-						<input type="text" class="form-control" aria-label="keywords" aria-describedby="configKeywords" v-model="configKeywords" v-on:keyup="app.refresh()" placeholder="mit Komma separieren">
+						<input type="text" class="form-control text-end" aria-label="keywords" aria-describedby="configKeywords" v-model="configKeywords" v-on:keyup="app.refresh()" placeholder="mit Komma separieren">
 					</div>
 					<div class="input-group input-group-sm mb-3">
 						<span class="input-group-text" id="configAuthor">author</span>
-						<input type="text" class="form-control" aria-label="author" aria-describedby="configAuthor" v-model="configAuthor" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="author" aria-describedby="configAuthor" v-model="configAuthor" v-on:keyup="app.refresh()">
 					</div>
 					<div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" id="displaySocialMediaMetadata" v-model="socialMediaMetadata.display" v-on:click="app.refresh()">
@@ -49,22 +49,22 @@
 					</div>
 					<div class="input-group input-group-sm mb-3 mt-3" v-if="socialMediaMetadata.display">
 						<span class="input-group-text" id="ogUrl">og:url</span>
-						<input type="text" class="form-control" aria-label="og:url" aria-describedby="ogUrl" v-model="socialMediaMetadata.ogUrl" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="og:url" aria-describedby="ogUrl" v-model="socialMediaMetadata.ogUrl" v-on:keyup="app.refresh()">
 					</div>
 					<div v-if="socialMediaMetadata.display" class="form-text">The canonical URL of your object that will be used as its permanent ID in the graph.</div>
 					<div class="input-group input-group-sm mb-3" v-if="socialMediaMetadata.display">
 						<span class="input-group-text" id="ogImage">og:image</span>
-						<input type="text" class="form-control" aria-label="og:image" aria-describedby="ogImage" v-model="socialMediaMetadata.ogImage" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="og:image" aria-describedby="ogImage" v-model="socialMediaMetadata.ogImage" v-on:keyup="app.refresh()">
 					</div>
 					<div v-if="socialMediaMetadata.display" class="form-text">An image URL which should represent your object within the graph.</div>
 					<div class="input-group input-group-sm mb-3" v-if="socialMediaMetadata.display">
 						<span class="input-group-text" id="twitterSite">twitter:site</span>
-						<input type="text" class="form-control" aria-label="twitter:site" aria-describedby="twitterSite" v-model="socialMediaMetadata.twitterSite" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="twitter:site" aria-describedby="twitterSite" v-model="socialMediaMetadata.twitterSite" v-on:keyup="app.refresh()">
 					</div>
 					<div v-if="socialMediaMetadata.display" class="form-text">&commat;username for the website used in the card footer.</div>
 					<div class="input-group input-group-sm mb-3" v-if="socialMediaMetadata.display">
 						<span class="input-group-text" id="twitterCreator">twitter:creator</span>
-						<input type="text" class="form-control" aria-label="twitter:creator" aria-describedby="twitterCreator" v-model="socialMediaMetadata.twitterCreator" v-on:keyup="app.refresh()">
+						<input type="text" class="form-control text-end" aria-label="twitter:creator" aria-describedby="twitterCreator" v-model="socialMediaMetadata.twitterCreator" v-on:keyup="app.refresh()">
 					</div>
 					<div v-if="socialMediaMetadata.display" class="form-text">&commat;username for the content creator &sol; author.</div>
 					<div class="form-check form-switch">
