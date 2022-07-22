@@ -35,7 +35,7 @@ var app = new Vue({
             twitterSite: "",
             twitterCreator: "mhrstmnn"
         },
-        useContentDeliveryNetwork: false
+        useContentDeliveryNetwork: true
     },
     methods: {
         htmlDataToString: function () {
